@@ -1,15 +1,13 @@
-#Git-a-Movie — Python Recommendation Engine
-
-
+Git-a-Movie — Python Recommendation Engine
 Overview
 
-Git-a-Movie is a Python-based movie recommendation engine designed to help users discover new films based on similarity metrics and preference modeling. The system applies information retrieval techniques, algorithmic ranking, and modular OOP design to compute accurate and scalable movie recommendations. It features efficient data processing, clear architecture, and a simple CLI interface for interactive movie queries.
+Git-a-Movie is a Python-based movie recommendation engine designed to help users discover new films using similarity metrics and preference modeling. The system applies information retrieval techniques, algorithmic ranking, and modular OOP design to generate accurate and scalable movie recommendations. It features efficient data processing, clear architecture, and a simple CLI interface for interactive movie queries.
 
 Key Features
 
 Personalized recommendation engine using similarity scoring across movie metadata
 
-Genre, rating, and popularity filters for targeted discovery
+Genre, rating, and popularity filters for targeted movie discovery
 
 Modular code structure (data loaders, model layer, recommender engine) for easy maintenance
 
@@ -27,7 +25,7 @@ Added LRU caching to avoid recalculating frequently accessed results
 
 Structured the codebase using object-oriented design (data manager, model modules, scoring engine)
 
-Included an evaluation pipeline using precision@k, recall@k, and NDCG metrics
+Included evaluation via precision@k, recall@k, and NDCG metrics
 
 How to Run
 
@@ -47,6 +45,7 @@ Run the recommendation engine directly:
 python recommender.py
 
 Project Structure
+Git-a-movie-Recommendation-Engine-/
 ├── data_manager.py        # Loads, cleans, and structures movie data  
 ├── models.py              # Similarity functions and TF-IDF weighting  
 ├── recommender.py         # Core recommendation engine  
@@ -54,4 +53,3 @@ Project Structure
 ├── main.py                # Entry point  
 ├── ml-latest-small/       # MovieLens dataset  
 └── README.md  
-
