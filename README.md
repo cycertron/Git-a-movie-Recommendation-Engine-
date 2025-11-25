@@ -1,29 +1,57 @@
-# Git-a-movie
-Springfield college midterm advance python project by the fahrenheit coder group. This is a movie recommendation system. 
+#Git-a-Movie — Python Recommendation Engine
+
 
 Overview
 
-Git-a-Movie is a Python-based movie recommendation system designed to help users discover new films based on their preferences.
-It combines data analysis and recommendation to suggest personalized movie options, making movie selection quick and engaging.
+Git-a-Movie is a Python-based movie recommendation engine designed to help users discover new films based on similarity metrics and preference modeling. The system applies information retrieval techniques, algorithmic ranking, and modular OOP design to compute accurate and scalable movie recommendations. It features efficient data processing, clear architecture, and a simple CLI interface for interactive movie queries.
 
+Key Features
 
-Features
-->Personalized movie recommendations based on user data
-->Filtering by genre, ratings, or popularity
-->Modular code design for easy maintenance and updates
-->Efficient data handling using Python
-->Simple command-line interface
+Personalized recommendation engine using similarity scoring across movie metadata
 
+Genre, rating, and popularity filters for targeted discovery
 
+Modular code structure (data loaders, model layer, recommender engine) for easy maintenance
+
+Fast computation using Python and NumPy
+
+Command-line interface (CLI) for querying and retrieving recommendations
+
+Technical Highlights
+
+Implemented Cosine similarity, Jaccard similarity, and TF-IDF weighting for ranking relevance
+
+Utilized NumPy vectorization to accelerate scoring and reduce computation time
+
+Added LRU caching to avoid recalculating frequently accessed results
+
+Structured the codebase using object-oriented design (data manager, model modules, scoring engine)
+
+Included an evaluation pipeline using precision@k, recall@k, and NDCG metrics
 
 How to Run
 
-Clone this repository:
+Clone the repository:
 
-    git clone https://github.com/curious7-web/Git-a-movie.git
-    cd Git-a-movie
+git clone https://github.com/cycertron/Git-a-movie-Recommendation-Engine-.git
+cd Git-a-movie-Recommendation-Engine-
 
-Run the main program
 
-To test the recommendation engine separately:
-    python recommender.py
+Run the main application:
+
+python main.py
+
+
+Run the recommendation engine directly:
+
+python recommender.py
+
+Project Structure
+├── data_manager.py        # Loads, cleans, and structures movie data  
+├── models.py              # Similarity functions and TF-IDF weighting  
+├── recommender.py         # Core recommendation engine  
+├── movie_app.py           # CLI interface  
+├── main.py                # Entry point  
+├── ml-latest-small/       # MovieLens dataset  
+└── README.md  
+
